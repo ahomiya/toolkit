@@ -1,0 +1,17 @@
+{
+  "name": "Web Toolkit",
+  "version": "1.0.0",
+  "authors": [
+    "ahomiya.com <hello@ahomiya.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "packages",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+
+  }
+}
