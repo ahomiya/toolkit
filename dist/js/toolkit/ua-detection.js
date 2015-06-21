@@ -15,19 +15,19 @@ var parser = new UAParser(),
 // -----------------------------------------------------------------------------
 // OS
 if(agent.os.name == 'Mac OS') {
-  html.className += 'OS-Mac';
+  html.className += ' OS-Mac';
 }
 
 if(agent.os.name == 'Windows') {
-  html.className += 'OS-Windows';
+  html.className += ' OS-Windows';
 }
 
 if(agent.os.name == 'iOS') {
-  html.className += 'OS-iOS';
+  html.className += ' OS-iOS';
 }
 
 if(agent.os.name == 'Android') {
-  html.className += 'OS-Android';
+  html.className += ' OS-Android';
 }
 
 html.className += ' OS-' + agent.os.version;
