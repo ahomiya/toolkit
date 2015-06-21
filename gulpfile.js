@@ -23,17 +23,17 @@ var packages        = {
   // JavaScript
   js: {
     utilities: [
-      packages + '/ahomiya.wasabi/dist/**/*'
+      packages + '/ahomiya.wasabi/dist/**/*'                  // jQuery utilities
     ],
     ua: [
-      packages + '/ahomiya.tonkatsu/dist/**/*'
+      packages + '/ahomiya.tonkatsu/dist/**/*'                // User-agent
     ]
   },
 
   // SASS
   sass: {
     helpers: [
-      packages + '/ahomiya.sukiyaki/dist/**/*'
+      packages + '/ahomiya.sukiyaki/dist/**/*'                // SASS helpers
     ]
   }
 
