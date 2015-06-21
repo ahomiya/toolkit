@@ -1,0 +1,19 @@
+{
+  "name": "Toolkit",
+  "version": "1.0.0",
+  "authors": [
+    "ahomiya.com <hello@ahomiya.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "packages",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ahomiya.sukiyaki": "https://github.com/ahomiya/sukiyaki.git",
+    "ahomiya.wasabi": "https://github.com/ahomiya/wasabi.git",
+    "ahomiya.tonkatsu": "https://github.com/ahomiya/tonkatsu.git"
+  }
+}
