@@ -11,7 +11,6 @@
   "homepage": "http://www.ahomiya.com",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-concat": "2.5.0",
-    "gulp-rename": "1.2.0"
+    "gulp-concat": "2.5.0"
   }
 }
