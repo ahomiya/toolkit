@@ -1,10 +1,6 @@
 // Plugin dependencies
 var gulp            = require('gulp'),                        // Gulp
-    concat          = require('gulp-concat')                  // Concatinate
-
-// -----------------------------------------------------------------------------
-// Configurations
-var packages        = './packages'                            // Packages
+    concat          = require('gulp-concat')                  // Concatinate files
 
 // -----------------------------------------------------------------------------
 // Globs
@@ -20,22 +16,12 @@ var root            = {
 // Packages
 var packages        = {
 
-  // JavaScript
-  js: {
-    utilities: [
-      packages + '/ahomiya.wasabi/dist/**/*'                  // jQuery utilities
-    ],
-    ua: [
-      packages + '/ahomiya.tonkatsu/dist/**/*'                // User-agent
-    ]
-  },
-
-  // SASS
-  sass: {
-    helpers: [
-      packages + '/ahomiya.sukiyaki/dist/**/*'                // SASS helpers
-    ]
-  }
+  js: [
+    root.src + "/js/**/*"
+  ],
+  sass: [
+    root.src + "/sass/**/*"
+  ]
 
 };
 
@@ -45,18 +31,23 @@ var packages        = {
 
 // JavaScript utilities
 gulp.task('build:js.utilities', function() {
-  return gulp.src(packages.js.utilities)
-    .pipe(gulp.dest(root.dist.js));
-});
+  gulp.src(packages.js)
+    .pipe(concat('jquery.utilities.js'))
+    .pipe(gulp.dest(root.dist.js + '/toolkit'));
 
-// User-agent detection
-gulp.task('build:js.ua', function() {
-  return gulp.src(packages.js.ua)
+  gulp.src(packages.js)
     .pipe(gulp.dest(root.dist.js));
 });
 
 // SASS function and mixin library
-gulp.task('build:sass.helpers', function() {
-  return gulp.src(packages.sass.helpers)
+gulp.task('build:sass.utilities', function() {
+  gulp.src(packages.sass)
     .pipe(gulp.dest(root.dist.sass));
 });
+
+gulp.task('build',
+  [
+    'build:js.utilities',                                     // JavaScript
+    'build:sass.utilities'                                    // Sass
+  ]
+);

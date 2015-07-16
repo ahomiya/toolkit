@@ -2,7 +2,7 @@
 // Check if element exists
 $.fn.exists = function(callback) {
   var args = [].slice.call(arguments, 1);
-  
+
   if(this.length) {
     callback.call(this, args);
   }
@@ -11,7 +11,7 @@ $.fn.exists = function(callback) {
 
 // Has attribute
 // Determine whether any of the matched elements are assigned the given attribute.
-$.fn.hasAttr = function(name) {  
+$.fn.hasAttr = function(name) {
 	return this.attr(name) !== undefined;
 };
 
