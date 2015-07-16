@@ -5,7 +5,7 @@ Toolkit is a collection of extensible front-end UI components and behaviors for 
 This project is maintained and funded by [ahomiya.com](http://www.ahomiya.com) in Chiang Mai, Thailand.
 
 * Source: [https://github.com/ahomiya/toolkit](https://github.com/ahomiya/toolkit)
-* Homepage: [http://www.ahomiya.com](http://www.ahomiya.com)
+* Homepage: [github.com/ahomiya](https://github.com/ahomiya/)
 
 
 ## Quick start
