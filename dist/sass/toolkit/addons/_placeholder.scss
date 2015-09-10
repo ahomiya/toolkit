@@ -1,0 +1,10 @@
+// HTML5 Placeholder
+
+@mixin placeholder($color) {
+  color: $color;
+  font: {
+    family: $font-family-base;
+    size: 11px;
+  }
+  opacity: 1;
+}
